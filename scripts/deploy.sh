@@ -38,7 +38,7 @@ main() {
     authWithServiceAccount
     configureGoogleCloudSdk
     loginToContainerRegistry _json_key
-    buildAndTagDockerImage .
+    buildAndTagDockerImage -f docker/Dockerfile
     publishDockerImage
     logoutContainerRegistry $DOCKER_REGISTRY
     deployToKubernetesCluster backend
