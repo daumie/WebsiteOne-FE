@@ -41,7 +41,7 @@ main() {
     buildAndTagDockerImage -f docker/Dockerfile .
     publishDockerImage
     logoutContainerRegistry $DOCKER_REGISTRY
-    deployToKubernetesCluster backend
+    deployToKubernetesCluster frontend
 }
 
 main
