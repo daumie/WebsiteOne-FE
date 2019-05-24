@@ -3,7 +3,7 @@ set -eo pipefail
 
 DEPLOY_SCRIPT_PATH="${HOME}/deploy"
 
-curl -o $DEPLOY_SCRIPT_PATH https://raw.githubusercontent.com/AndelaOSP/bash-helper-modules/master/k8s/deploy
+curl -o $DEPLOY_SCRIPT_PATH https://raw.githubusercontent.com/daumie/WebsiteOne-FE/develop/scripts/deploy_helper.sh
 
 source $DEPLOY_SCRIPT_PATH
 
